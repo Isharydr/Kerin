@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página para mi Pareja</title>
+  <!-- Tailwind CSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Estilos personalizados (opcional) -->
+  <style>
+    .gallery img {
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Barra de navegación -->
+<nav class="bg-pink-200 shadow-lg fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <a href="#" class="text-2xl font-bold text-pink-800">Para mi Amor</a>
+      <button class="block lg:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <div class="hidden lg:flex space-x-4">
+        <a href="#" class="text-pink-800 hover:text-pink-600">Inicio</a>
+        <a href="#fotos" class="text-pink-800 hover:text-pink-600">Actividades</a>
+        <a href="#plantas" class="text-pink-800 hover:text-pink-600">Comida</a>
+        <a href="#collages" class="text-pink-800 hover:text-pink-600">Nosotros</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto px-4 py-8">
+    <br><br><br><br><br>
+    
+    <h1 class="text-4xl font-bold text-center text-pink-800 mb-4">Para Kevin Eduardo Gonzalez Garcia</h1>
+    <p class="text-center text-gray-700 mb-8">Una página llena de amor y recuerdos preciados.</p>
+    <img class="w-1/5 mx-auto" src="img/hh.jpeg" alt="">
+    <br><br><br><br><br>
+
+
+    <!-- Sección de Fotos -->
+    <section id="fotos" class="mb-12">
+      <h2 class="text-2xl font-bold text-pink-800 mb-12">Actividades</h2>
+      <div class="relative">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-8 rounded-lg shadow-md">
+              <img src="img/act1.jpg" alt="Foto 1" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Tu favorito</h2>
+                <p class="text-white mt-2">Mi recuerdo de esta imagen es que quería pintar contigo y no sabía qué, y tú
+                  dijiste que te gustaría pintar tu runette de TFT porque era el primer monito que obtuviste.</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-8 rounded-lg shadow-md">
+              <img src="img/act2.jpg" alt="Foto 2" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-8 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Pintura y café</h2>
+                <p class="text-white mt-2">Fue muy divertido pintar y ver las estrellas ese día, a mí me encantó
+                  demasiado.</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act3.jpg" alt="Foto 3" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Series</h2>
+                <p class="text-white mt-2">Sé que ver series contigo me gusta demasiado, y algo que realmente odiaba era
+                  ver series con gente porque no sabía en qué momento volvería a verlas, pero contigo no lo odié. Puede
+                  que vivir juntos influyera, pero creo más que es porque te amo mucho.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act4.jpg" alt="Foto 4" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Playa</h2>
+                <p class="text-white mt-2">Sé que no te llevé a la playa lo suficiente y ahora está muy lejos, pero ese
+                  día me gustó mucho: verte en la orilla, cómo me ahogaba, pero más la confianza que me da como para
+                  dejar que me cargaras en el mar. Eso siempre me ha dado miedo, por eso no sé nadar, pero fue un golpe
+                  de realidad para mí porque a veces no recuerdo el confort que me das.</p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act5.jpg" alt="Foto 5" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Belleza</h2>
+                <p class="text-white mt-2">Sé que nos hemos puesto mascarillas y sé que lo haces solo por mí, así que te
+                  amo por eso y más.</p>
+              </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act8.jpg" alt="Foto 8" class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Dibujar</h2>
+                <p class="text-white mt-2">No logré encontrar el dibujo que hicimos ambos una vez, pero sé que fue muy
+                  divertido hacerlo contigo.</p>
+              </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act10.jpg" alt="Foto 10"
+                class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Jugar</h2>
+                <p class="text-white mt-2">Hemos jugado mucho, ya sea TFT, Minecraft, Valorant, Fortnite, Stardew
+                  Valley,
+                  The Forest, Fallout, y creo que ya. Pero jugar contigo es muy divertido y lo aprecio.</p>
+              </div>
+            </div>
+
+            <!-- Slide 11 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act11.jpeg" alt="Foto 11"
+                class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Colorear</h2>
+                <p class="text-white mt-2">Colorear es increíble y relajante, pero contigo lo es más.</p>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act7.jpeg" alt="Foto 7"
+                class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Compras</h2>
+                <p class="text-white mt-2">Ir a comprar contigo siempre he pensado que es difícil por mí, al querer
+                  organizar todo lo que ocupamos, y por ti, al solo decir sí o no. Pero eso no implica que no disfrute
+                  ir a
+                  comprar contigo, ya sea en Peta o aquí, ya que en este momento es la única manera que tengo de pasar
+                  un
+                  poco más de tiempo contigo.</p>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide flex flex-col md:flex-row items-center bg-green-800 p-6 rounded-lg shadow-md">
+              <img src="img/act6.jpeg" alt="Foto 6"
+                class="w-full md:w-1/2 h-auto max-h-[400px] object-cover rounded-lg">
+              <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl text-white font-bold">Viaje</h2>
+                <p class="text-white mt-2">Esta fue la decisión más importante de mi vida, ya que elegí seguirte para no
+                  tener que separarnos. Estuve viviendo en Atoyac solo por ti, porque quiero estar el resto de mi vida
+                  contigo. Incluso si me cuesta adaptarme al campo laboral o encontrar un trabajo, me esforzaré
+                  demasiado para poder conseguir lo que quiero. Pero ya te tengo a ti, así que solo me falta la
+                  estabilidad económica que quiero para ser más feliz contigo.</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- Paginación -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+
+
+    </section>
+    <section id="plantas" class="mb-12">
+      <h2 class="text-2xl font-bold text-pink-800 mb-6">Comida</h2>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-20 gallery">
+        <div>
+          <img src="img/comida1.jpg" alt="Planta 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida2.jpg" alt="Planta 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida3.jpg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida4.jpg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida5.jpeg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida6.jpeg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida7.jpeg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida8.jpeg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida9.jpeg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida10.jpg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida11.jpg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/comida12.jpg" alt="Planta 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Sección de Collages -->
+    <section id="collages" class="mb-12">
+      <h2 class="text-2xl font-bold text-pink-800 mb-6">Nosotros</h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Fotitos de momentos y de nosotros siendo felices. Conocerte fue algo inesperado, pero me siento afortunada de que haya sucedido, porque ahora no me imagino sin ti.😊💕
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-20 gallery">
+
+        <div>
+          <img src="img/2.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/3.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/4.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/6.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/7.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/9.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/10.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+
+        <div>
+          <img src="img/12.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/13.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/14.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/16.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/17.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/18.jpeg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/19.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/21.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/22.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/23.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/24.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/25.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/26.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/27.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/28.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+        <div>
+          <img src="img/29.jpg" alt="Collage 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+
+      </div><br>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20 gallery">
+        <div></div>
+        <div>
+          <img src="img/11.jpg" alt="Collage 2" class="w-auto h-auto object-cover rounded-lg shadow-md">
+        </div>
+        <div></div>
+      </div>
+    </section>
+  </div>
+<!-- Footer -->
+<footer class="bg-pink-200 shadow-lg fixed bottom-0 left-0 w-full z-50">
+  <div class="container mx-auto px-4 py-3 text-center">
+    <p class="text-pink-800 text-sm">&copy; 2025 Para mi Amor Kevin. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoHeight: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+</html>
